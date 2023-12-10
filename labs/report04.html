@@ -1,0 +1,21 @@
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM programming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<h3> 2진수 변환기 </h3>
+<hr>
+<h3>파스칼 삼각형</h3>
+</body>
+</html>
+"""
+
+file_path = "report4.html"
+with open(file_path, "w", encoding="utf-8") as file:
+    file.write(html_content)
+
+print(f"HTML 문서가 {file_path}에 성공적으로 저장되었습니다.")
