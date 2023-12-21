@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-3 p-8">
+        <h2 style="text-align: center">취업 정보 계정 만들기</h2>
+        <hr>
+        <form>
+            <div class="container mt-4 ">
+                <div class="row">
+                    <div>
+                       <p><span class="text-danger">*</span> 필수 입력 항목 </p>
+                    </div>
+                </div>
+                <p class="container p-2 bg-primary text-white">기본 정보</p><br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label>이름<span class="text-danger">*</span><br> <input type="text" class="form-control" name="name" id="name"></label> <br>
+                        <label for="email">이메일<span class="text-danger">*</span> </label><br>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="id@domainname"><br>
+                        <label for="pwd">암호<span class="text-danger">*</span></label><br>
+                        <input type="password" class="form-control" name="pwd" id="pwd" size="12"><br>
+                        <label for="pwd_confirm">암호 확인<span class="text-danger">*</span></label><br>
+                        <input type="password" class="form-control" name="pwd_confirm" id="pwd_confirm" size="12"><br>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="phone">모바일 폰<span class="text-danger">*</span> </label><br>
+                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="- 없이 번호만 입력"><br>
+                        <label>홈 페이지<br> <input type="url" class="form-control"  name="homepg" id="homepg" placeholder="http://"></label><br>
+                        <label>주소<span class="text-danger">*</span> <br><input type="text" class="form-control" name="address" id="address" size="30"></label> <br>
+                    </div>
+                </div>
+                <br><br><p class="container p-2 bg-success text-white">학력 정보</p><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>학교명 <span class="text-danger">*</span><br><input type="text" class="form-control" name="school" id="school" size="12"></label> <br>
+                    </div>
+                    <div class="col-md-6">
+                        <label>전공<span class="text-danger">*</span><br> <input type="text" class="form-control" name="major" id="major" size="12"></label> <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>졸업 여부<span class="text-danger">*</span><br>
+                            <select name="graduate" id="grad" class="form-control">
+                                <option value="1">---선택---</option>
+                                <option value="2">졸업예정</option>
+                                <option value="3">졸업</option>
+                            </select>
+                        </label> <br>
+                    </div>
+                    <div class="col-md-6">
+                        <label>졸업(예정)연도<span class="text-danger">*</span> </label> <br>
+                        <input type="date" class="form-control">
+                    </div>
+                </div><br><br>
+
+                <p class="container p-2 bg-secondary text-white">직무 정보</p><br>
+                    <div class = "row">
+                         <div class="col-md-3">
+                            <label> 최종 직위 </label> </div>
+                        <div class="col-md-9">
+                            <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="final_position" id="d1" value="사원급">
+                    <label class="form-check-label" for="d1">사원급</label>
+                </div>
+                            <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="final_position" id="d2" value="대리~과장">
+                    <label class="form-check-label" for="d2">대리~과장</label>
+                </div>
+                    <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="final_position" id="d3" value="차장급 이상">
+                    <label class="form-check-label" for="d3">차장급 이상</label>
+                </div>
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="final_position" id="d4" value="임원급">
+                    <label class="form-check-label" for="d4">임원급</label>
+                </div>
+
+                   <div class="row">
+                       <label class="form-label">주요 담당 업무</label></div>
+                     <textarea class="form-control" id="comments" name="comments" rows="10" placeholder="담당했던 주요 업무를 기술하시오."></textarea>
+                    <br><br><div class="mb-3 text-center">
+                    <button type="submit" class="btn btn-outline-primary">제출</button>
+                    <button type="reset" class="btn btn-outline-primary">재작성</button>
+                     </div>
+         </form>
+    </div>
+</body>
+</html>
