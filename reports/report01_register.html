@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>회원가입</title>
 </head>
 <body>
+<h2>취업 정보 계정 만들기</h2>
+<p>* 필수 입력 항목</p>
+<p>기본 정보<br>
+<form>
+    <div id="txt_input">
+        <label for="name">이름* </label><input type="text" id="name" name="name" size="8"><br>
+        <label>이메일* <input type="text" id="email" name="email" placeholder="id@domain_name"size="15"></label><br>
+        <label>암호* <input type="password" id="pwd" size="12"></label><br>
+        <label>암호 확인* <input type="password" id="pwd_check" size="12"></label><br>
+        <label for="phone">모바일 폰* </label><input type="tel" name="phone" id="phone" placeholder="010-0000-0000" size="13"><br>
+        <label>개인 홈페이지 <input type="url" name="homepg" id="homepg" placeholder="http://" size="30"></label><br>
+        <label>주소* <input type="text" name="address" id="address" size="30"></label> <br>
+    </div>
 
+    <div>
+        <p>학력</p>
+        <div>
+            <label>학교 명* <input type="text" name="school" id="school" size="12"></label> <br>
+            <label>전공 <input type="text" name="major" id="major" size="12"></label> <br>
+            <label>졸업 여부
+                <select name="graduate" id="grad">
+                    <option value="1">---선택---</option>
+                    <option value="2">졸업예정</option>
+                    <option value="3">졸업</option>
+                </select>
+            </label> <br>
+            <label>졸업(예정)일 </label>
+            <input type="date">
+        </div>
+    <div>
+        <p>업무 경력</p>
+        <label>근무업체명 <input type="text" name="workplace" id="wp" size="20"></label> <br>
+        <label>직위 <input type="text" name="class" id="class" size="10"></label> <br>
+        <p id="main_work">담당 업무
+        <textarea id="comments" name="comments" cols="80" rows="10">
+            이전 업체에서 담당한 업무를 기술하시오.
+        </textarea></p>
+        <label>근무년수 <input type="number" min="0" max="10" step="0.5" ></label>년 <br>
+    </div>
+        <p>자기소개서</p>
+        <label>첨부 파일 <input type="file" name="resume" id="rs" size="12"></label><br>
+
+<p><input type="submit" value="제출"> <input type="reset" value="재작성"> </p>
+</form>
 </body>
 </html>
