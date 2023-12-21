@@ -19,9 +19,15 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 
-
-
         <style>
+
+        body {
+        background-image: url('gregoire-jeanneau-R6DKrDa_wyQ-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        color: #fff;
+    }
          .transparent-button {
         background-color: rgba(0, 0, 255, 0.5); /* Red: 0, Green: 0, Blue: 255, 알파: 0.5 (50% 투명) */
         padding: 10px 20px;
@@ -72,22 +78,28 @@
         font-size: 0.3em;
         margin-top: 5px;
     }
+     #HOME {
+            position: relative;
+            height: 100vh; /* 100% viewport height */
+            background: url('shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg') center/cover no-repeat; /* Replace 'shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg' with your image path */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff; /* Text color */
+        }
 </style>
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Clarence Taylor</span>
-            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-image: url('bas-van-den-eijkhof-ypk__5RJOBM-unsplash.jpg');" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#HOME">HOME</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#favorites" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Favorites
@@ -98,49 +110,31 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="h3">Concert</a>
                     </div>
-
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#card">Card</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#works">Works</a></li>
                 </ul>
             </div>
-        </nav>
+    </nav>
+</body>
         <!-- Page Content-->
-         <div class="container-fluid p-0" id="HOME">
-    <!-- HOME -->
-    <header class="py-5 bg-image-full" style="background-image: url('sean-oulashin-KMn4VEeEPR8-unsplash.jpg')">
-        <div class="text-center my-8">
-            <!-- 헤더 내용 추가 -->
-        </div>
-    </header>
 
-    <!-- Content section -->
-    <section class="py-5" style="background-image: url('shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg');">
-        <div class="container my-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <h1 class="text-white fs-3 fw-bolder">Seohyeon HONG</h1>
-                    <p class="lead"></p>
-                    <p class="mb-0">Welcome to my homepage. Have a Nice day!</p>
-                </div>
+ <div class="container-fluid p-0">
+            <!-- About-->
+            <section id="HOME">
+        <header class="py-5 bg-image-full">
+            <div class="text-center my-5">
+                <h1 class=style="color: #0074cc;">Seohyeon Hong</h1>
             </div>
-        </div>
+        </header>
     </section>
-    <section class="py-8 bg-image-full" style="background-image: url('gregoire-jeanneau-R6DKrDa_wyQ-unsplash.jpg')">
-        <!-- 섹션 내용 추가 -->
-        <div style="height: 20rem"></div>
-    </section>
-</div>
-
-    </body>
+            <hr class="m-0"/>
 
 
         <div class="container-fluid p-0">
-
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
+                    <h1 class="mb-4" style="color: #3498db;">
                         Seohyeon
                         <span class="text-white">Hong</span>
                     </h1>
@@ -155,43 +149,42 @@
 
 
             <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
-                    </div>
-                </div>
-            </section>
+           <!--Main layout-->
+  <main class="my-5" id="interests">
+    <div class="container">
+        <section class="text-center">
+        <h4 class="mb-5 text-white display-4"><strong>My Interests</strong></h4>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="KakaoTalk_20231222_013522494.jpg" class="img-fluid" />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">꽃꽃이</h5>
+                <a href="#collapseExample1" class="btn" style="background-color: #800080;" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample1">Read</a>
+              <div class="collapse text-dark" id="collapseExample1">
+               <p>동네 꽃집에서 계절마다 다양한 꽃들을 사와서 화병에 꽂는 것을 좋아합니다.</p>
+              </div>
+              </div></div></div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="KakaoTalk_20231222_013522494_01.jpg" class="img-fluid" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">근력 운동</h5>
+                <a href="#collapseExample2" class="btn" style="background-color: black; color: white;" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample1">Read</a>
+              <div class="collapse text-dark" id="collapseExample2">
+               <p>유산소 운동보다는 근력 운동을 좋아하는 편입니다. 예전에는 낮은 빈도로 고강도 운동을 즐겼다면 지금은 꾸준히 적당한 강도로 운동하려 노력합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
             <hr class="m-0">
 
 
@@ -211,64 +204,49 @@
             <section class="resume-section" id="f3">
 
 
-            <!-- card-->
-            <section class="resume-section" id="card">
-            <hr class="m-0" />
-
             <!-- contact-->
-            <section class="resume-section" id="contact">'
-
-            <div class="container-fluid overflow-hidden px-lg-0" style="margin: 6rem 0;">
-           <div class="container contact px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 ps-lg-0">
-                        <h1 class="mb-4" style="color: #3498db;" >Feel Free To Contact Me</h1>
-                        <p class="mb-4">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="transparent-button rounded-pill py-3 px-5" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+            <div class="container-fluid overflow-hidden px-lg-0" id="contact" style="margin: 6rem 0;">
+    <h1 class="mb-4" style="color: #3498db;">Feel Free To Contact Me</h1>
+    <form>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    <label for="name">Your Name</label>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    <label for="email">Your Email</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                    <label for="message">Message</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
+            </div>
+        </div>
+    </form>
+</div>
+
         </div>
     </div>
             </section>
             <hr class="m-0" />
 
             <!-- works-->
-            <section class="resume-section" id="works">
-                <div class="resume-section-content">
-                    <br><br><h2 class="mb-5" style="font-size: 5em; color: #4a6274;">My Works</h2>
-                    <div class="works-icons">
-                        <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/reports/report01.html"><i class="fab fa-github"></i>1</a>
-                        <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/reports/report02.html"><i class="fab fa-github"></i>2</a>
-                        <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/reports/report03.html"><i class="fab fa-github"></i>3</a>
-                        <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/labs/report4.html"><i class="fab fa-github"></i>4</a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </body>
+            <div class="resume-section-content text-center" id="works"><br><br><h2 class="mb-5" style="font-size: 4em; color: #4a6274;">My Works</h2>
+            <div class="works-icons">
+            <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/reports/report01.html" style="color: #3498db;"><i class="fab fa-github"></i>1</a>
+            <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/reports/report02.html" style="color: #3498db;"><i class="fab fa-github"></i>2</a>
+            <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/reports/report03.html" style="color: #3498db;"><i class="fab fa-github"></i>3</a>
+            <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/labs/report4.html" style="color: #3498db;"><i class="fab fa-github"></i>4</a>
+            </div>
+                 <hr class="m-0" />
+</div>
 </html>
