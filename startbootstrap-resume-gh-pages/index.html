@@ -14,7 +14,32 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+
+
         <style>
+         .transparent-button {
+        background-color: rgba(0, 0, 255, 0.5); /* Red: 0, Green: 0, Blue: 255, 알파: 0.5 (50% 투명) */
+        padding: 10px 20px;
+        color: #fff; /* 버튼 텍스트 색상 */
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .transparent-button:hover {
+        background-color: rgba(0, 0, 255, 0.8); /* 호버 시 투명도를 높여 어두운 파란색으로 변경 */
+    }
+
     @media screen and (max-width: 600px) {
         body {
             background-color: #f2f2f2;
@@ -23,54 +48,114 @@
             font-size: 1.5em;
         }
     }
+        .works-icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        .works-icon {
+        font-size: 3em;
+        margin: 0 10px;
+        color: #34495e;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .works-icon:hover {
+        color: #007bb5; /* 밝은 파란색으로 변경 */
+    }
+
+     .works-icon i::before {
+        font-size: 0.3em;
+        margin-top: 5px;
+    }
 </style>
-
-
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Clarence Taylor</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="media/gregoire-jeanneau-R6DKrDa_wyQ-unsplash.jpg" alt="..." /></span>
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#HOME">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#favorites" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Favorites
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="h1">Traveling</a>
+                    <a class="dropdown-item" href="h2">Exhibition</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="h3">Concert</a>
+                    </div>
+
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#card">Card</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#works">Works</a></li>
                 </ul>
             </div>
         </nav>
         <!-- Page Content-->
+         <div class="container-fluid p-0" id="HOME">
+    <!-- HOME -->
+    <header class="py-5 bg-image-full" style="background-image: url('sean-oulashin-KMn4VEeEPR8-unsplash.jpg')">
+        <div class="text-center my-8">
+            <!-- 헤더 내용 추가 -->
+        </div>
+    </header>
+
+    <!-- Content section -->
+    <section class="py-5" style="background-image: url('shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg');">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="text-white fs-3 fw-bolder">Seohyeon HONG</h1>
+                    <p class="lead"></p>
+                    <p class="mb-0">Welcome to my homepage. Have a Nice day!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-8 bg-image-full" style="background-image: url('gregoire-jeanneau-R6DKrDa_wyQ-unsplash.jpg')">
+        <!-- 섹션 내용 추가 -->
+        <div style="height: 20rem"></div>
+    </section>
+</div>
+
+    </body>
+
+
         <div class="container-fluid p-0">
+
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Clarence
-                        <span class="text-primary">Taylor</span>
+                        Seohyeon
+                        <span class="text-white">Hong</span>
                     </h1>
-                    <div class="subheading mb-5">
-                        3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                        <a href="mailto:name@email.com">name@email.com</a>
+                    <div class="subheading mb-3">
+                        the Department of Information Statistics, Dongduk Women's University
                     </div>
-                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    </div>
+                    <p class="lead mb-5">안녕하세요. 정보통계학과 재학 중인 홍서현입니다. 저희 취향을 담은 홈페이지를 개설해 보았으니 재밌게 구경해 주세요.</p>
+
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
+
+
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -107,131 +192,83 @@
                     </div>
                 </div>
             </section>
+            <hr class="m-0">
+
+
+            <!-- favorites-->
+            <section class="resume-section" id="favorites">
+
+            </section>
+            <hr class="m-0" >
+
+            <!-- f1-->
+            <section class="resume-section" id="f1">
+
+            <!-- f2-->
+            <section class="resume-section" id="f2">
+
+            <!-- f3-->
+            <section class="resume-section" id="f3">
+
+
+            <!-- card-->
+            <section class="resume-section" id="card">
             <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+
+            <!-- contact-->
+            <section class="resume-section" id="contact">'
+
+            <div class="container-fluid overflow-hidden px-lg-0" style="margin: 6rem 0;">
+           <div class="container contact px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <h1 class="mb-4" style="color: #3498db;" >Feel Free To Contact Me</h1>
+                        <p class="mb-4">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="transparent-button rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- works-->
+            <section class="resume-section" id="works">
+                <div class="resume-section-content">
+                    <br><br><h2 class="mb-5" style="font-size: 5em; color: #4a6274;">My Works</h2>
+                    <div class="works-icons">
+                        <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/reports/report01.html"><i class="fab fa-github"></i>1</a>
+                        <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/reports/report02.html"><i class="fab fa-github"></i>2</a>
+                        <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/reports/report03.html"><i class="fab fa-github"></i>3</a>
+                        <a class="works-icon" href="https://seohyeon-hong.github.io/web_2023/labs/report4.html"><i class="fab fa-github"></i>4</a>
                     </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
                 </div>
             </section>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
     </body>
 </html>
