@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <style>
+        .s { color: red; font-size: 10pt; margin:20px; padding-left: 10px}
+        .b {
+        font-weight: bold;
+        background-color: lightblue;
+        width: 800px;
+        padding-left: 10px;
+        height: 23px;
+        margin:20px}
+
+        h2 {
+        margin: 30px;}
+
+        #txtdiv {display: inline-block;
+        margin-left: 8px;
+        text-align: right;
+        width: 130px;
+        padding-right: 8px;}
+
+        #txt_input {display: inline-block;
+        margin-left: 8px;
+        text-align: left;
+        width: 130px;
+        padding-right: 8px;}
+
+        label.required::after {
+        content: "*";
+        color: red;
+    }
+
+        #button_input {margin-left:200px}
+
+    </style>
+
+</head>
+<body>
+<h2>취업 정보 계정 만들기</h2>
+<p class="s">* 필수 입력 항목</p>
+<form>
+    <p class="b"> 기본 정보 </p>
+    <div id="txtdiv">
+        <label for="name" class="required">이름 </label><br>
+        <label class="required">이메일</label><br>
+        <label class="required">암호</label><br>
+        <label class="required">암호 확인 </label><br>
+        <label for="phone" class="required">모바일 폰 </label><br>
+         <label>개인 홈페이지 </label><br>
+        <label class="required">주소 </label> <br>
+        </div>
+
+    <div id="txt_input">
+        <input type="text" id="name" name="name" size="8"><br>
+         <input type="text" id="email" name="email" placeholder="id@domain_name" size="15">
+         <input type="password" id="pwd" size="12">
+        <input type="password" id="pwd_check" size="12">
+        <input type="tel" name="phone" id="phone" placeholder="010-0000-0000" size="13">
+        <input type="url" name="homepg" id="homepg" placeholder="http://" size="30">
+        <input type="text" name="address" id="address" size="30">
+    </div>
+
+
+<p class="b">학 력</p>
+    <div id="txtdiv">
+            <label class="required">학교 명</label> <br>
+            <label>전공</label> <br>
+            <label>졸업 여부
+            </label> <br>
+            <label>졸업(예정)일 </label>
+
+    </div>
+
+    <div id="txt_input">
+        <input type="text" name="school" id="school" size="12">
+        <input type="text" name="major" id="major" size="12">
+        <select name="graduate" id="graduate">
+                    <option value="1">---선택---</option>
+                    <option value="2">졸업예정</option>
+                    <option value="3">졸업</option>
+        </select>
+        <input type="date">
+    </div>
+
+    <p class="b">업무 경력</p>
+    <div id="txtdiv">
+
+        <label>근무업체명 </label> <br>
+
+        <label>직위 </label> <br>
+
+        <p id="main_work">담당 업무
+        </p>
+
+        <label>근무년수</label> <br>
+    </div>
+
+
+    <div id="txt_input">
+       <input type="text" name="workplace" id="wp" size="20">
+        <input type="text" name="class" id="class" size="10">
+        <textarea id="comments" name="comments" cols="80" rows="10">
+            이전 업체에서 담당한 업무를 기술하시오.
+        </textarea>
+         <input type="number" min="0" max="10" step="0.5" >년
+    </div>
+
+    <p class="b">자기소개서</p>
+    <div id="button_input">
+        <label>첨부 파일 <input type="file" name="resume" id="rs" size="12"></label><br><br>
+        <input type="submit" value="제출"> <input type="reset" value="재작성"></div>
+</form>
+</body>
+</html>
